@@ -1,0 +1,21 @@
+name: Analise de Conexoes com Gemini
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  analise_de_socios:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do codigo
+        uses: actions/checkout@v4
+
+      - name: Instalar bibliotecas e executar script
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          pip install pandas
+          pip install google-generativeai
+          pip install python-dotenv
+          python investigacao_socios_alternativa.py
