@@ -1,3 +1,5 @@
+# Iniciando a automacao
+
 import pandas as pd
 import os
 import google.generativeai as genai
