@@ -18,4 +18,4 @@ jobs:
           pip install pandas
           pip install google-generativeai
           pip install python-dotenv
-          python investigacao_socios_alternativa.py 
+          python investigacao_socios_alternativa.py
