@@ -19,7 +19,7 @@ model = genai.GenerativeModel('gemini-1.5-flash')
 # ----------------------------------------
 # Parte 2: Carregar e Analisar o Arquivo de Sócios
 # ----------------------------------------
-nome_arquivo_socios = 'K3241.K03200Y0.D50809.SOCIOCSV'
+nome_arquivo_socios = 'socios.csv'
 
 try:
     df_socios = pd.read_csv(
