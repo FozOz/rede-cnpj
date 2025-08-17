@@ -1,5 +1,3 @@
-# Teste final
-
 name: Analise de Conexoes com Gemini
 
 on:
@@ -13,7 +11,7 @@ jobs:
       - name: Checkout do codigo
         uses: actions/checkout@v4
 
-      - name: Instalar bibliotecas e executar script
+      - name: Executar script de investigacao
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
