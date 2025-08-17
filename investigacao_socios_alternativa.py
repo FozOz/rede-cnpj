@@ -26,7 +26,7 @@ try:
         os.path.join("dados_brutos", nome_arquivo_socios),
         delimiter=';',
         encoding='ISO-8859-1',
-        nrows=50000, # Carregamos 20 mil linhas para ter uma amostra grande
+        nrows=20000, # Carregamos 20 mil linhas para ter uma amostra grande
         header=None,
         dtype={0: str}
     )
