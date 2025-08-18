@@ -1,9 +1,9 @@
 # Iniciando a automacao
 
-import pandas as pd
+import pandas as pd # type: ignore
 import os
-import google.generativeai as genai
-from dotenv import load_dotenv
+import google.generativeai as genai # type: ignore
+from dotenv import load_dotenv # type: ignore
 import re
 
 # ----------------------------------------
