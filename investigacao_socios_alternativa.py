@@ -9,10 +9,14 @@ import re
 # ----------------------------------------
 # Parte 1: Configurar a API do Gemini
 # ----------------------------------------
-load_dotenv()
 api_key = os.getenv("GEMINI_API_KEY")
 if not api_key:
-    print("Erro: A chave de API do Gemini não foi encontrada no arquivo .env.")
+    from dotenv import load_dotenv
+    load_dotenv()
+    api_key = os.getenv("GEMINI_API_KEY")
+
+if not api_key:
+    print("Erro: A chave de API do Gemini não foi encontrada.")
     exit()
 
 genai.configure(api_key=api_key)
