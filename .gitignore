@@ -1,2 +1,3 @@
 dados_brutos/
 /.env
+.DS_Store
