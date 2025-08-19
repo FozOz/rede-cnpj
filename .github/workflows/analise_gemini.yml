@@ -1,5 +1,3 @@
-# Triggering automation
-
 name: Analise de Conexoes com Gemini
 
 on:
