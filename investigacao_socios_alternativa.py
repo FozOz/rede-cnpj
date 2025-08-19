@@ -29,7 +29,7 @@ nome_arquivo_socios = 'socios.csv'
 
 try:
     df_socios = pd.read_csv(
-        os.path.join("dados_brutos", nome_arquivo_socios),
+        nome_arquivo_socios,
         delimiter=';',
         encoding='ISO-8859-1',
         nrows=20000, # Carregamos 20 mil linhas para ter uma amostra grande
