@@ -64,7 +64,7 @@ except Exception as e:
 # ----------------------------------------
 dados_para_gemini = socios_duplicados[['CNPJ_EMPRESA', 'NOME_SOCIO']].drop_duplicates().head(10).to_string()
 
-pergunta = "Analise a tabela de sócios e CNPJs. Existem sócios que se repetem em diferentes empresas? Se sim, quais são, e o que isso pode indicar?"
+pergunta = "Analise a tabela de sócios e CNPJs. Existem sócios que se repetem em diferentes empresas? Se sim, quais são, e o que isso pode indicar? Há algum sócio que tenha BARBOSA ou PEIXOTO como parte do nome?"
 
 prompt_completo = f"Tabela de sócios com CNPJs:\n\n{dados_para_gemini}\n\n{pergunta}"
 
